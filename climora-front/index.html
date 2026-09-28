@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login · CLIMORA</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <main class="login">
+    <section class="login__hero">
+      <div class="hero__top">
+        <div class="hero__brand">
+          <div class="hero__logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="white" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M7 12a5 5 0 0 1 10 0" stroke="#f59e0b" stroke-width="1.5"/></svg></div>
+          <span class="hero__name">CLIMORA</span>
+        </div>
+        <p class="hero__tag">Dashboard de Monitoramento Climático e Logístico</p>
+      </div>
+
+      <div class="hero__quote-box">
+        <blockquote class="hero__quote">
+          Dados precisos no momento certo fazem a diferença entre uma safra lucrativa e uma perdida.
+        </blockquote>
+        <p class="hero__quote-sub">Dashboard de Monitoramento Climático e Logístico</p>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat"><div class="hero__stat-value">25</div><div class="hero__stat-label">Sensores IoT</div></div>
+        <div class="hero__stat"><div class="hero__stat-value">6</div><div class="hero__stat-label">Culturas</div></div>
+        <div class="hero__stat"><div class="hero__stat-value">38</div><div class="hero__stat-label">Exportadores</div></div>
+      </div>
+    </section>
+
+    <section class="login__panel">
+      <div class="login__box">
+        <h1 class="login__title">Acesse sua conta</h1>
+        <p class="login__subtitle">Dashboard de Monitoramento Climático e Logístico</p>
+
+        <form class="form" id="form-login" novalidate>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" autocomplete="username" required />
+          </div>
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="••••••••••••••" autocomplete="current-password" required />
+          </div>
+          <div class="form__error hidden" id="erro-login" role="alert">E-mail ou senha incorretos.</div>
+          <button type="submit" class="form__submit">Entrar</button>
+        </form>
+
+        <div class="demo">
+          <div class="demo__head">
+            <span class="demo__title">Contas de Demonstração</span>
+            <button type="button" class="demo__link" id="auto-preencher">Clique para auto-preencher</button>
+          </div>
+          <div class="demo__list" id="lista-demo"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
